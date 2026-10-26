@@ -1,8 +1,8 @@
 # ForgeMind · VentureWest 5-Minute Pitch Script
 
 Slides: https://wuhubing.github.io/forgemind-pitch/
-Format: 5-minute pitch, one presenter. 7 main slides plus 1 backup slide (A1).
-Length: about 576 English words. At 130 words per minute that is about **4:25**, leaving roughly 35 seconds of buffer.
+Format: 5-minute pitch, one presenter. 6 main slides plus 1 backup slide (A1).
+Length: about 513 English words. At 130 words per minute that is about **3:56**, leaving roughly 64 seconds of buffer.
 
 > Present in English. The Chinese under each slide is a translation to help you understand and memorize the script; it isn't meant to be read aloud.
 
@@ -61,17 +61,9 @@ Why is this defensible? Text-to-CAD tools stop at geometry; we test behavior. Th
 ## 6 · Go to Market (~40 s)
 
 **EN**
-Our first customers are teams that iterate on mechanisms often. Robotics and embodied-AI teams that need fixtures, transmissions and experimental mechanisms. University labs that need reproducible experiment assets. And small hardware teams that want to kill infeasible concepts before anyone spends days on detailed CAD. The business model is seats plus simulation usage, campus licenses, and paid pilots that convert into enterprise subscriptions. Our first milestone is **three to five design partners**, and we'll measure engineering hours saved and the share of designs that are usable.
+Our first customers are teams that iterate on mechanisms often. Robotics and embodied-AI teams that need fixtures, transmissions and experimental mechanisms. University labs that need reproducible experiment assets. And small hardware teams that want to kill infeasible concepts before anyone spends days on detailed CAD. The business model is seats plus simulation usage, campus licenses, and paid pilots that convert into enterprise subscriptions. Our first milestone is **three to five design partners**, and we'll measure engineering hours saved and the share of designs that are usable. ForgeMind: mechanical designs, verified before delivery. Thank you.
 
 **中文**
-我们的首批客户，是需要频繁迭代机构设计的团队：需要夹具、传动结构和实验机构的机器人和具身智能团队；需要可复现实验资产的高校实验室；以及希望在有人花好几天做详细 CAD 之前，就先排除不可行方案的小型硬件团队。商业模式包括按席位加仿真用量收费、校园授权，以及先做付费试点、再转成企业订阅。我们的第一个里程碑是**三到五个设计合作伙伴**，衡量标准是节省的工程工时和可用设计的比例。
+我们的首批客户，是需要频繁迭代机构设计的团队：需要夹具、传动结构和实验机构的机器人和具身智能团队；需要可复现实验资产的高校实验室；以及希望在有人花好几天做详细 CAD 之前，就先排除不可行方案的小型硬件团队。商业模式包括按席位加仿真用量收费、校园授权，以及先做付费试点、再转成企业订阅。我们的第一个里程碑是**三到五个设计合作伙伴**，衡量标准是节省的工程工时和可用设计的比例。ForgeMind：机械设计，交付前已验证。谢谢大家。
 
 ---
-
-## 7 · Team + Next Steps (~30 s)
-
-**EN**
-We're three MIT MEng engineers with experience at Microsoft, Apple, JD.com, Ericsson and iFLYTEK, and this started as a second-place project at Microsoft's Global Intern Hackathon. Today the core loop works end to end and runs locally. In the next three to six months we'll add more mechanism types and manufacturing constraints. In six to twelve months we'll run pilots with design partners. ForgeMind: mechanical designs, verified before delivery. Thank you.
-
-**中文**
-我们是三位 MIT MEng 工程师，曾在微软、苹果、京东、爱立信和科大讯飞工作过。这个项目最初来自微软全球实习生黑客松，拿了第二名。目前核心闭环已经端到端跑通，可以在本地运行。接下来三到六个月，我们会扩充机构类型，并加入制造约束。六到十二个月内，我们会和设计合作伙伴一起做试点。ForgeMind：机械设计，交付前已验证。谢谢大家。
