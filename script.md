@@ -2,7 +2,7 @@
 
 Slides: https://wuhubing.github.io/forgemind-pitch/
 Format: 5-minute pitch, one presenter. 7 main slides plus 1 backup slide (A1).
-Length: about 594 English words. At 130 words per minute that is about **4:35**, leaving roughly 25 seconds of buffer.
+Length: about 576 English words. At 130 words per minute that is about **4:25**, leaving roughly 35 seconds of buffer.
 
 > Present in English. The Chinese under each slide is a translation to help you understand and memorize the script; it isn't meant to be read aloud.
 
@@ -11,10 +11,10 @@ Length: about 594 English words. At 130 words per minute that is about **4:35**,
 ## 1 · Cover (~25 s)
 
 **EN**
-Hi, I'm [name], here with Jiayu and Harris. We're ForgeMind, three MIT MEng students in Data Science for Engineering Systems. AI already lets anyone vibe-code a website. We want to bring that shift to hardware. But in hardware, a design that only *looks* right is worthless. So we built AutoMech: an AI agent that designs machines and verifies they actually work before delivery.
+Hi, I'm [name], here with Jiayu and Harris. We're ForgeMind, three MIT MEng students in Data Science for Engineering Systems. AI already lets anyone vibe-code a website. We want to bring that shift to hardware. But in hardware, a design that only *looks* right is worthless. So we built an AI agent that designs machines and verifies they actually work before delivery.
 
 **中文**
-大家好，我是 [名字]，和 Jiayu、Harris 一起。我们是 ForgeMind，三个人都是 MIT 工程系统数据科学方向的 MEng 学生。今天的 AI 已经让任何人都能靠"氛围编程"做出一个网站，我们想把这种变化带到硬件领域。但在硬件里，一个只是"看起来对"的设计毫无价值。所以我们做了 AutoMech：一个能设计机器，并在交付前验证它真的能工作的 AI 智能体。
+大家好，我是 [名字]，和 Jiayu、Harris 一起。我们是 ForgeMind，三个人都是 MIT 工程系统数据科学方向的 MEng 学生。今天的 AI 已经让任何人都能靠"氛围编程"做出一个网站，我们想把这种变化带到硬件领域。但在硬件里，一个只是"看起来对"的设计毫无价值。所以我们做了一个能设计机器，并在交付前验证它真的能工作的 AI 智能体。
 
 ---
 
@@ -31,10 +31,10 @@ Text-to-CAD tools today generate geometry. It looks plausible, but machines fail
 ## 3 · Product (~40 s)
 
 **EN**
-That's what AutoMech does. You type a goal, for example "design a 4-to-1 planetary reducer." The system writes a parametric CAD script and builds the parts and joints. You get an orbitable 3D model, a physics video with metrics, and, if it fails, the cause and how to fix it. It all happens in one browser workspace and runs locally on a laptop CPU, with no GPU, no Docker and no database. That matters for adoption: an engineer can try it in minutes.
+That's what ForgeMind does. You type a goal, for example "design a 4-to-1 planetary reducer." The system writes a parametric CAD script and builds the parts and joints. You get an orbitable 3D model, a physics video with metrics, and, if it fails, the cause and how to fix it. It all happens in one browser workspace and runs locally on a laptop CPU, with no GPU, no Docker and no database. That matters for adoption: an engineer can try it in minutes.
 
 **中文**
-这正是 AutoMech 做的事。你输入一个目标，比如"设计一个 4 比 1 的行星减速器"。系统会写出参数化的 CAD 脚本，搭好零件和关节。你会得到一个可以旋转查看的 3D 模型、一段带指标的物理仿真视频；如果失败了，还会告诉你失败原因和修改方法。这一切都在一个浏览器工作台里完成，在笔记本的 CPU 上本地运行，不需要 GPU、Docker 或数据库。这一点对推广很关键：工程师几分钟就能上手试用。
+这正是 ForgeMind 做的事。你输入一个目标，比如"设计一个 4 比 1 的行星减速器"。系统会写出参数化的 CAD 脚本，搭好零件和关节。你会得到一个可以旋转查看的 3D 模型、一段带指标的物理仿真视频；如果失败了，还会告诉你失败原因和修改方法。这一切都在一个浏览器工作台里完成，在笔记本的 CPU 上本地运行，不需要 GPU、Docker 或数据库。这一点对推广很关键：工程师几分钟就能上手试用。
 
 ---
 
@@ -68,10 +68,10 @@ Our first customers are teams that iterate on mechanisms often. Robotics and emb
 
 ---
 
-## 7 · Team + Ask (~40 s)
+## 7 · Team + Next Steps (~30 s)
 
 **EN**
-We're three MIT MEng engineers with experience at Microsoft, Apple, JD.com, Ericsson and iFLYTEK, and this started as a second-place project at Microsoft's Global Intern Hackathon. Today the core loop works end to end and runs locally. In the next three to six months we'll add more mechanism types and manufacturing constraints. In six to twelve months we'll run pilots with design partners. **Our ask for VentureWest: introductions to robotics and hardware design partners, industry mentors, and early pilot opportunities.** ForgeMind: mechanical designs, verified before delivery. Thank you.
+We're three MIT MEng engineers with experience at Microsoft, Apple, JD.com, Ericsson and iFLYTEK, and this started as a second-place project at Microsoft's Global Intern Hackathon. Today the core loop works end to end and runs locally. In the next three to six months we'll add more mechanism types and manufacturing constraints. In six to twelve months we'll run pilots with design partners. ForgeMind: mechanical designs, verified before delivery. Thank you.
 
 **中文**
-我们是三位 MIT MEng 工程师，曾在微软、苹果、京东、爱立信和科大讯飞工作过。这个项目最初来自微软全球实习生黑客松，拿了第二名。目前核心闭环已经端到端跑通，可以在本地运行。接下来三到六个月，我们会扩充机构类型，并加入制造约束。六到十二个月内，我们会和设计合作伙伴一起做试点。**我们希望 VentureWest 帮我们对接机器人和硬件领域的设计合作伙伴、行业导师，以及早期试点机会。** ForgeMind：机械设计，交付前已验证。谢谢大家。
+我们是三位 MIT MEng 工程师，曾在微软、苹果、京东、爱立信和科大讯飞工作过。这个项目最初来自微软全球实习生黑客松，拿了第二名。目前核心闭环已经端到端跑通，可以在本地运行。接下来三到六个月，我们会扩充机构类型，并加入制造约束。六到十二个月内，我们会和设计合作伙伴一起做试点。ForgeMind：机械设计，交付前已验证。谢谢大家。

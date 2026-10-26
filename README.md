@@ -1,11 +1,10 @@
 # ForgeMind · VentureWest Pitch
 
 **Mechanical designs, verified before delivery.**
-AutoMech is an AI agent that turns a plain-English goal into CAD, then proves the machine works in physics simulation.
+ForgeMind is an AI agent that turns a plain-English goal into CAD, then proves the machine works in physics simulation.
 
 - **Slides (live):** https://wuhubing.github.io/forgemind-pitch/
 - **Pitch script (English + 中文):** [script.md](script.md)
-- **Product source:** https://github.com/OliviaLJY/AutoMech
 
 ## Presenting
 
