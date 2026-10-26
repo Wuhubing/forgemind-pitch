@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ForgeMind Pitch</title>
+<meta name="description" content="ForgeMind / AutoMech: mechanical designs verified before delivery. VentureWest pitch deck.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#05090F;overflow:hidden;font-family:'IBM Plex Sans',Arial,sans-serif}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+#stage>section{position:absolute;inset:0;box-sizing:border-box;overflow:hidden}
+#stage>section:not(.active){display:none!important}
+section *{margin:0;box-sizing:border-box}
+section ul{padding-left:1.2em}
+section table{border-collapse:collapse;width:100%}
+section td,section th{padding:.35em .6em;border-bottom:1px solid #27395A;text-align:left}
+section h1,section h2,section h3{font-weight:700}
+x-shape{display:block;clip-path:polygon(0 30%,60% 30%,60% 0,100% 50%,60% 100%,60% 70%,0 70%)}
+section aside{display:none}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:12px;align-items:center;justify-content:center;padding:10px;color:#A8BACD;font-size:14px;opacity:0;transition:opacity .2s}
+body:hover #bar{opacity:1}
+#bar button{background:#16243D;color:#EEF3F8;border:1px solid #27395A;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+#notes{position:fixed;left:16px;right:16px;bottom:56px;max-width:960px;margin:0 auto;background:rgba(11,19,34,.95);color:#EEF3F8;border:1px solid #27395A;border-radius:12px;padding:16px 20px;font-size:17px;line-height:1.5;display:none}
+#notes.show{display:block}
+</style>
+</head>
+<body>
+<div id="stage">
+<section id="cover" data-transition="fade" style="background:#0B1322;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<svg aria-label="AutoMech live run: two meshing gears on a drive shaft" style="position:absolute;left:1072px;top:200px;width:720px;height:680px" width="720" height="680" viewBox="0 0 720 680" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2A44" stroke-width="1"/></pattern>
+<linearGradient id="shaft" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5CC8E8" stop-opacity="0.15"/><stop offset="0.5" stop-color="#9FE6FA" stop-opacity="0.85"/><stop offset="1" stop-color="#5CC8E8" stop-opacity="0.2"/></linearGradient>
+<radialGradient id="halo" cx="0.45" cy="0.55" r="0.5"><stop offset="0" stop-color="#5CC8E8" stop-opacity="0.18"/><stop offset="1" stop-color="#5CC8E8" stop-opacity="0"/></radialGradient>
+<filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect x="1" y="1" width="718" height="678" rx="24" fill="#0D1726" stroke="#27395A" stroke-width="2"/>
+<rect x="2" y="66" width="716" height="612" fill="url(#grid)"/>
+<line x1="2" y1="66" x2="718" y2="66" stroke="#27395A" stroke-width="2"/>
+<circle cx="34" cy="34" r="6" fill="#3A4A63"/><circle cx="56" cy="34" r="6" fill="#3A4A63"/><circle cx="78" cy="34" r="6" fill="#3A4A63"/>
+<ellipse cx="330" cy="370" rx="300" ry="190" fill="url(#halo)"/>
+<ellipse cx="320" cy="380" rx="250" ry="90" fill="none" stroke="#24405E" stroke-width="2" transform="rotate(-12 320 380)"/>
+<ellipse cx="500" cy="250" rx="160" ry="60" fill="none" stroke="#24405E" stroke-width="2" transform="rotate(-12 500 250)"/>
+<g transform="translate(170 230) scale(2.4)" fill="none" stroke="#5CC8E8" stroke-width="2.4" filter="url(#glow)" opacity="0.6"><path d="M53 5h14l3 12 9 4 11-6 10 10-6 11 4 9 12 3v14l-12 3-4 9 6 11-10 10-11-6-9 4-3 12H53l-3-12-9-4-11 6-10-10 6-11-4-9-12-3V48l12-3 4-9-6-11 10-10 11 6 9-4 3-12Zm7 30a25 25 0 1 0 0 50 25 25 0 0 0 0-50Zm0 13a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z"/></g>
+<g transform="translate(170 230) scale(2.4)" fill="#0F2236" fill-opacity="0.6" stroke="#8FE0F7" stroke-width="1.1"><path d="M53 5h14l3 12 9 4 11-6 10 10-6 11 4 9 12 3v14l-12 3-4 9 6 11-10 10-11-6-9 4-3 12H53l-3-12-9-4-11 6-10-10 6-11-4-9-12-3V48l12-3 4-9-6-11 10-10 11 6 9-4 3-12Zm7 30a25 25 0 1 0 0 50 25 25 0 0 0 0-50Zm0 13a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z"/></g>
+<g transform="translate(420 130) scale(1.5)" fill="none" stroke="#5CC8E8" stroke-width="3.6" filter="url(#glow)" opacity="0.6"><path d="M53 5h14l3 12 9 4 11-6 10 10-6 11 4 9 12 3v14l-12 3-4 9 6 11-10 10-11-6-9 4-3 12H53l-3-12-9-4-11 6-10-10 6-11-4-9-12-3V48l12-3 4-9-6-11 10-10 11 6 9-4 3-12Zm7 30a25 25 0 1 0 0 50 25 25 0 0 0 0-50Zm0 13a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z"/></g>
+<g transform="translate(420 130) scale(1.5)" fill="#0F2236" fill-opacity="0.6" stroke="#8FE0F7" stroke-width="1.6"><path d="M53 5h14l3 12 9 4 11-6 10 10-6 11 4 9 12 3v14l-12 3-4 9 6 11-10 10-11-6-9 4-3 12H53l-3-12-9-4-11 6-10-10 6-11-4-9-12-3V48l12-3 4-9-6-11 10-10 11 6 9-4 3-12Zm7 30a25 25 0 1 0 0 50 25 25 0 0 0 0-50Zm0 13a12 12 0 1 1 0 24 12 12 0 0 1 0-24Z"/></g>
+<polygon points="40,402 680,262 684,280 44,420" fill="url(#shaft)" stroke="#7FD4EE" stroke-opacity="0.5" stroke-width="1"/>
+</svg>
+<p style="position:absolute;left:1292px;top:214px;width:280px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6;text-align:center">automech / live-run</p>
+<p style="position:absolute;left:1612px;top:214px;width:160px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7FD9A8;text-align:right">● RUNNING</p>
+<div style="position:absolute;left:1112px;top:300px;width:240px;display:flex;flex-direction:column;gap:4px;background:#0B1322;border:1px solid #27395A;border-radius:12px;padding:16px 20px">
+<p style="font-size:24px;color:#A8BACD">Input torque</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#EEF3F8">12.0 N·m</p>
+</div>
+<div style="position:absolute;left:1532px;top:670px;width:220px;display:flex;flex-direction:column;gap:4px;background:#0B1322;border:1px solid #27395A;border-radius:12px;padding:16px 20px">
+<p style="font-size:24px;color:#A8BACD">Gear ratio</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#EEF3F8">20 : 1</p>
+</div>
+<div style="position:absolute;left:1112px;top:740px;width:240px;display:flex;flex-direction:column;gap:4px;background:#0B1322;border:1px solid #27395A;border-radius:12px;padding:16px 20px">
+<p style="font-size:24px;color:#A8BACD">Task status</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#7FD9A8">PASS</p>
+</div>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8;letter-spacing:2px;text-transform:uppercase">ForgeMind · AutoMech</p>
+<h1 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1.05;width:880px">Mechanical designs, verified before delivery</h1>
+<p style="font-size:30px;line-height:1.45;color:#A8BACD;width:840px">An AI agent that turns a plain-English goal into CAD, then proves the machine works in physics simulation.</p>
+<div style="display:flex;flex-direction:row;gap:16px;width:880px">
+<p style="font-size:24px;color:#F2A65A;background:#1B2333;padding:10px 20px;border-radius:999px">2nd Place · Microsoft Global Intern Hackathon 2026, Hardware AI</p>
+</div>
+<div style="position:absolute;left:128px;bottom:64px;width:880px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">Jiayu Li · Harris Wang · Weibing Wang — MIT MEng</p>
+</div>
+<aside>[~25s] Hi, I’m [name], here with Jiayu and Harris. We’re ForgeMind, three MIT MEng students in Data Science for Engineering Systems. AI already lets anyone vibe-code a website. We want to bring that shift to hardware. But in hardware, a design that only looks right is worthless. So we built AutoMech: an AI agent that designs machines and verifies they actually work before delivery.</aside>
+</section>
+
+<section id="problem" data-transition="fade" style="background:#5CC8E8;color:#0B1322;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#0B1322">The problem</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;width:1500px">AI can draw a machine. It can’t yet prove the machine works.</h2>
+<div style="display:flex;flex-direction:row;gap:48px;flex:1">
+<div style="width:560px;display:flex;flex-direction:column;gap:20px">
+<h3 style="font-size:30px;font-weight:600">Geometry-only tools miss</h3>
+<ul style="font-size:30px;line-height:1.6;color:#13233A">
+<li>Interfering parts</li>
+<li>Floating or wrong fits</li>
+<li>Locked joints</li>
+<li>Right gear ratio, overturned machine</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#0B1322;color:#EEF3F8;padding:36px 40px;border-radius:24px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8;text-transform:uppercase;letter-spacing:2px">Our own run · ANYmal stand-still test</p>
+<div style="display:flex;flex-direction:row;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;align-items:center;background:#16243D;border-radius:16px;padding:16px">
+<svg aria-label="Robot standing upright, as the pose metric reported" style="width:320px;height:150px" width="320" height="150" viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+<line x1="30" y1="142" x2="290" y2="142" stroke="#3A4A63" stroke-width="4"/>
+<line x1="60" y1="72" x2="260" y2="65" stroke="#F2A65A" stroke-width="3" stroke-dasharray="10 8"/>
+<rect x="140" y="36" width="40" height="16" rx="4" fill="#A8BACD"/>
+<rect x="110" y="50" width="100" height="44" rx="10" fill="#EEF3F8"/>
+<line x1="125" y1="94" x2="120" y2="138" stroke="#EEF3F8" stroke-width="12" stroke-linecap="round"/>
+<line x1="195" y1="94" x2="200" y2="138" stroke="#EEF3F8" stroke-width="12" stroke-linecap="round"/>
+</svg>
+<p style="font-size:24px;color:#A8BACD">Pose metric read 2.1°</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:48px;font-weight:700;color:#F2A65A">PASS</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;align-items:center;background:#16243D;border-radius:16px;padding:16px">
+<svg aria-label="Robot tipped over onto its side, as the camera showed" style="width:320px;height:150px" width="320" height="150" viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+<line x1="30" y1="142" x2="290" y2="142" stroke="#3A4A63" stroke-width="4"/>
+<g transform="rotate(90 160 90)">
+<rect x="140" y="36" width="40" height="16" rx="4" fill="#A8BACD"/>
+<rect x="110" y="50" width="100" height="44" rx="10" fill="#EEF3F8"/>
+<line x1="125" y1="94" x2="120" y2="138" stroke="#EEF3F8" stroke-width="12" stroke-linecap="round"/>
+<line x1="195" y1="94" x2="200" y2="138" stroke="#EEF3F8" stroke-width="12" stroke-linecap="round"/>
+</g>
+</svg>
+<p style="font-size:24px;color:#A8BACD">Camera saw it tip over</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:48px;font-weight:700;color:#7FD9A8">FAIL</p>
+</div>
+</div>
+<p style="font-size:24px;color:#7D8FA6">Illustration of the run. The vision model caught what the number missed.</p>
+</div>
+</div>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700">The evaluator has to watch the machine work.</p>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#13314A">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#13314A">02</p>
+</div>
+<aside>[~45s] Text-to-CAD tools today generate geometry. It looks plausible, but machines fail in ways a render can’t show: parts interfere, joints lock, a gearbox has the right ratio but tips over. A real example from our own system: we asked a quadruped robot to stand still. The pose metric reported a 2.1-degree tilt, so it returned PASS. When our vision model watched the simulation frames, the robot had tipped onto its side. The numbers were wrong and the video wasn’t. Our conclusion: the evaluator has to watch the machine actually work.</aside>
+</section>
+
+<section id="product" data-transition="fade" style="background:#0B1322;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5CC8E8">Product</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">One prompt in, a tested machine out</h2>
+<div style="display:flex;flex-direction:row;gap:56px;flex:1;align-items:center">
+<div style="width:600px;display:flex;flex-direction:column;gap:28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6;text-transform:uppercase">You type</p>
+<p style="font-size:32px;font-weight:600;background:#16243D;border:1px solid #27395A;padding:20px 28px;border-radius:16px">“Design a 4:1 planetary reducer”</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6;text-transform:uppercase">You get</p>
+<ul style="font-size:30px;line-height:1.55;color:#A8BACD">
+<li>Parametric parts and assembly</li>
+<li>Orbitable 3D model</li>
+<li>Physics video and metrics</li>
+<li>Failure cause and repair guidance</li>
+</ul>
+<p style="font-size:26px;color:#7FD9A8;font-weight:600">Runs locally on a laptop CPU. No GPU, Docker or database.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;align-items:center;background:#16243D;border:1px solid #27395A;border-radius:24px;padding:24px">
+<img src="assets/reducer.gif" alt="Physics simulation of the generated four-planet 4:1 reducer, with the input crank turning the planets" style="width:600px;height:491px;object-fit:contain;border-radius:16px">
+<p style="font-size:24px;color:#A8BACD">Physics run of the generated reducer · measured <span style="color:#7FD9A8">4.0 : 1</span></p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">03</p>
+</div>
+<aside>[~40s] That’s what AutoMech does. You type a goal, for example “design a 4-to-1 planetary reducer.” The system writes a parametric CAD script and builds the parts and joints. You get an orbitable 3D model, a physics video with metrics, and, if it fails, the cause and how to fix it. It all happens in one browser workspace and runs locally on a laptop CPU, with no GPU, no Docker and no database. That matters for adoption: an engineer can try it in minutes.</aside>
+</section>
+
+<section id="loop" data-transition="fade" style="background:#101B30;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5CC8E8">How it works</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">Every failure feeds the next design</h2>
+<div style="display:flex;flex-direction:row;gap:48px">
+<div style="position:relative;width:900px;height:580px">
+<svg aria-label="A closed loop of six stages: design, build, check, judge, simulate, refine; the arrow from refine back to design is highlighted" style="position:absolute;left:0px;top:0px;width:900px;height:580px" width="900" height="580" viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg">
+<circle cx="450" cy="290" r="220" fill="none" stroke="#2C4466" stroke-width="4"/>
+<path d="M259.5 180 A220 220 0 0 1 450 70" fill="none" stroke="#F2A65A" stroke-width="8" stroke-linecap="round"/>
+<circle cx="450" cy="290" r="120" fill="#16243D" stroke="#27395A" stroke-width="2"/>
+<polygon points="353,92 332,116 322,98" fill="#F2A65A"/>
+<polygon points="573,107 542,101 552,83" fill="#5CC8E8"/>
+<polygon points="670,305 660,275 680,275" fill="#5CC8E8"/>
+<polygon points="547,488 568,464 578,482" fill="#5CC8E8"/>
+<polygon points="327,473 358,479 348,497" fill="#5CC8E8"/>
+<polygon points="230,275 240,305 220,305" fill="#5CC8E8"/>
+</svg>
+<div style="position:absolute;left:340px;top:35px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #F2A65A;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#F2A65A">01</p>
+<h3 style="font-size:30px;font-weight:600">Design</h3>
+</div>
+<div style="position:absolute;left:531px;top:145px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #2C4466;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">02</p>
+<h3 style="font-size:30px;font-weight:600">Build</h3>
+</div>
+<div style="position:absolute;left:531px;top:365px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #2C4466;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">03</p>
+<h3 style="font-size:30px;font-weight:600">Check</h3>
+</div>
+<div style="position:absolute;left:340px;top:475px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #2C4466;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">04</p>
+<h3 style="font-size:30px;font-weight:600">Judge</h3>
+</div>
+<div style="position:absolute;left:149px;top:365px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #2C4466;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">05</p>
+<h3 style="font-size:30px;font-weight:600">Simulate</h3>
+</div>
+<div style="position:absolute;left:149px;top:145px;width:220px;display:flex;flex-direction:row;gap:12px;align-items:center;background:#0B1322;border:2px solid #F2A65A;border-radius:14px;padding:14px 20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#F2A65A">06</p>
+<h3 style="font-size:30px;font-weight:600">Refine</h3>
+</div>
+<p style="position:absolute;left:20px;top:40px;width:300px;font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#F2A65A;text-align:right">FAIL → retry</p>
+<p style="position:absolute;left:340px;top:238px;width:220px;font-family:'Space Grotesk', Arial, sans-serif;font-size:32px;font-weight:700;color:#F2A65A;text-align:center">FAIL evidence</p>
+<p style="position:absolute;left:340px;top:284px;width:220px;font-size:24px;color:#A8BACD;text-align:center;line-height:1.3">becomes repair hints</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7FD9A8;text-transform:uppercase;letter-spacing:2px">Proof · passed strict review</p>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;background:#0B1322;border:1px solid #27395A;border-radius:16px;padding:20px">
+<img src="assets/reducer.gif" alt="Animated simulation of the four-planet 4:1 reducer turning" style="width:300px;height:220px;object-fit:cover;border-radius:12px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:30px;font-weight:600">Four-planet reducer</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.35">Measured <span style="color:#7FD9A8">4.0 : 1</span>. All four planets orbit and spin.</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;background:#0B1322;border:1px solid #27395A;border-radius:16px;padding:20px">
+<img src="assets/slider-crank.gif" alt="Animated simulation of the horizontal slider-crank moving back and forth" style="width:300px;height:220px;object-fit:cover;border-radius:12px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:30px;font-weight:600">Slider-crank</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.35"><span style="color:#7FD9A8">24.006 mm</span> stroke, stable forward and return.</p>
+</div>
+</div>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">04</p>
+</div>
+<aside>[~50s] Under the hood is a closed loop. Design: the model writes one CAD script. Build: parts, joints and meshes. Check: interference, support and collision. Judge: a vision model inspects six views for structural faults. Simulate: we drive the input and measure the output. Refine: every failure becomes concrete repair evidence for the next design. Under strict review this loop has already produced two working mechanisms: a four-planet reducer that measures 4.0 to 1 with every planet orbiting and spinning, and a slider-crank with a 24-millimeter stroke and stable forward and return motion.</aside>
+</section>
+
+<section id="moat" data-transition="fade" style="background:#0B1322;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5CC8E8">Why we win</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">We test behavior, not just geometry</h2>
+<div style="display:flex;flex-direction:row;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #7FD9A8;padding:22px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">Executable dependencies</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">Dimensions share formulas, so parts can’t drift out of fit.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #5CC8E8;padding:22px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">Task-level evaluator</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">Drive the input, watch the output. Video catches what metrics miss.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:10px;border-top:4px solid #F2A65A;padding:22px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">Failure-data flywheel</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">Every failure logs collisions, trajectories, video and the fix.</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px;flex:1">
+<div style="width:700px;display:flex;flex-direction:column;gap:14px;background:#16243D;border:1px solid #27395A;border-radius:20px;padding:32px 36px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#A8BACD;text-transform:uppercase">One-task pilot · 3-planet reducer</p>
+<p style="font-size:24px;color:#EEF3F8;padding:10px 0px 0px 0px">With executable dependencies</p>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:center">
+<div style="width:440px;height:48px;background:#7FD9A8;border-radius:8px"></div>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#7FD9A8">100/100</p>
+</div>
+<p style="font-size:24px;color:#EEF3F8;padding:10px 0px 0px 0px">With independent local values</p>
+<div style="display:flex;flex-direction:row;gap:20px;align-items:center">
+<div style="width:110px;height:48px;background:#F2A65A;border-radius:8px"></div>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:40px;font-weight:700;color:#F2A65A">25/100</p>
+</div>
+<p style="font-size:24px;color:#7D8FA6;padding:6px 0px 0px 0px">Small sample. Scaling up next.</p>
+</div>
+<div style="position:relative;flex:1;height:420px">
+<svg aria-label="Flywheel: more designs run, more failure data, better repair hints, higher pass rate, and back to more designs" style="position:absolute;left:0px;top:0px;width:916px;height:420px" width="916" height="420" viewBox="0 0 916 420" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="458" cy="210" rx="300" ry="150" fill="none" stroke="#2C4466" stroke-width="4"/>
+<polygon points="684,111 652,106 661,88" fill="#F2A65A"/>
+<polygon points="657,323 679,300 688,318" fill="#F2A65A"/>
+<polygon points="232,309 264,314 255,332" fill="#F2A65A"/>
+<polygon points="259,97 237,120 228,102" fill="#F2A65A"/>
+</svg>
+<p style="position:absolute;left:308px;top:32px;width:300px;font-size:24px;font-weight:600;background:#16243D;border:2px solid #2C4466;border-radius:999px;padding:12px 20px;text-align:center">More designs run</p>
+<p style="position:absolute;left:608px;top:182px;width:300px;font-size:24px;font-weight:600;background:#16243D;border:2px solid #2C4466;border-radius:999px;padding:12px 20px;text-align:center">More failure data</p>
+<p style="position:absolute;left:308px;top:332px;width:300px;font-size:24px;font-weight:600;background:#16243D;border:2px solid #2C4466;border-radius:999px;padding:12px 20px;text-align:center">Better repair hints</p>
+<p style="position:absolute;left:8px;top:182px;width:300px;font-size:24px;font-weight:600;background:#16243D;border:2px solid #2C4466;border-radius:999px;padding:12px 20px;text-align:center">Higher pass rate</p>
+<p style="position:absolute;left:338px;top:168px;width:240px;font-family:'Space Grotesk', Arial, sans-serif;font-size:32px;font-weight:700;color:#F2A65A;text-align:center;line-height:1.2">Data flywheel</p>
+<p style="position:absolute;left:338px;top:212px;width:240px;font-size:24px;color:#A8BACD;text-align:center">gets better with use</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">05</p>
+</div>
+<aside>[~45s] Why is this defensible? Text-to-CAD tools stop at geometry; we test behavior. Three things. First, executable dependencies: critical dimensions share parameters and formulas instead of hard-coded coordinates. In a one-task pilot on a three-planet reducer, that was 100 out of 100 versus 25 out of 100. It’s a small sample and we’re scaling it up. Second, a task-level evaluator that tests what the machine does, not how it looks. Third, a failure-data flywheel: every failure gives us collision points, trajectories, video and the fix that worked. That’s data geometry-only tools never collect.</aside>
+</section>
+
+<section id="market" data-transition="fade" style="background:#101B30;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5CC8E8">Go to market</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">Start with teams that iterate on mechanisms often</h2>
+<table style="font-size:28px;color:#EEF3F8">
+<tr><th style="width:30%;color:#5CC8E8;font-size:24px;text-align:left">First customers</th><th style="width:40%;color:#5CC8E8;font-size:24px;text-align:left">Job we do</th><th style="width:30%;color:#5CC8E8;font-size:24px;text-align:left">How we charge</th></tr>
+<tr><td>Robotics and embodied-AI teams</td><td style="color:#A8BACD">Fixtures, transmissions, test mechanisms</td><td>Seats + simulation usage</td></tr>
+<tr><td>University research labs</td><td style="color:#A8BACD">Concepts into reproducible experiment assets</td><td>Team or campus license</td></tr>
+<tr><td>Small hardware teams</td><td style="color:#A8BACD">Kill infeasible concepts before detailed CAD</td><td>Paid pilot, then enterprise</td></tr>
+</table>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;background:#0B1322;border:2px solid #F2A65A;border-radius:20px;padding:28px 40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#F2A65A;text-transform:uppercase">First milestone</p>
+<p style="font-size:30px;font-weight:600">3–5 design partners, measured on engineering hours saved and usable-design rate</p>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">06</p>
+</div>
+<aside>[~40s] Our first customers are teams that iterate on mechanisms often. Robotics and embodied-AI teams that need fixtures, transmissions and experimental mechanisms. University labs that need reproducible experiment assets. And small hardware teams that want to kill infeasible concepts before anyone spends days on detailed CAD. The business model is seats plus simulation usage, campus licenses, and paid pilots that convert into enterprise subscriptions. Our first milestone is three to five design partners, and we’ll measure engineering hours saved and the share of designs that are usable.</aside>
+</section>
+
+<section id="ask" data-transition="fade" style="background:#0B1322;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#5CC8E8">Team and next steps</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">Built by MIT engineers, ready for design partners</h2>
+<div style="display:flex;flex-direction:row;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#16243D;border:1px solid #27395A;border-radius:16px;padding:24px 28px">
+<h3 style="font-size:30px;font-weight:600">Jiayu Li</h3>
+<p style="font-size:24px;color:#A8BACD">CS, Stats · Microsoft, JD.com, Ericsson</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#16243D;border:1px solid #27395A;border-radius:16px;padding:24px 28px">
+<h3 style="font-size:30px;font-weight:600">Harris Wang</h3>
+<p style="font-size:24px;color:#A8BACD">Data Science, Econ · iFLYTEK, DCP</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;background:#16243D;border:1px solid #27395A;border-radius:16px;padding:24px 28px">
+<h3 style="font-size:30px;font-weight:600">Weibing Wang</h3>
+<p style="font-size:24px;color:#A8BACD">Math, CS · Apple, JD.com</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;padding:0px 4px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7FD9A8">NOW</p>
+<p style="font-size:26px;line-height:1.4">Core loop working, auditable benchmark, runs locally</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;padding:0px 4px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">3–6 MONTHS</p>
+<p style="font-size:26px;line-height:1.4">More mechanism types, manufacturing constraints</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:6px;padding:0px 4px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">6–12 MONTHS</p>
+<p style="font-size:26px;line-height:1.4">Design-partner pilots, team collaboration, enterprise deploy</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#5CC8E8;color:#0B1322;border-radius:20px;padding:28px 40px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;text-transform:uppercase;letter-spacing:2px">Our ask</p>
+<p style="font-family:'Space Grotesk', Arial, sans-serif;font-size:36px;font-weight:700">Robotics and hardware design partners · industry mentors · early pilots</p>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">github.com/OliviaLJY/AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">07</p>
+</div>
+<aside>[~40s] We’re three MIT MEng engineers with experience at Microsoft, Apple, JD.com, Ericsson and iFLYTEK, and this started as a second-place project at Microsoft’s Global Intern Hackathon. Today the core loop works end to end and runs locally. In the next three to six months we’ll add more mechanism types and manufacturing constraints. In six to twelve months we’ll run pilots with design partners. Our ask for VentureWest: introductions to robotics and hardware design partners, industry mentors, and early pilot opportunities. ForgeMind: mechanical designs, verified before delivery. Thank you.</aside>
+</section>
+
+<section id="appendix" data-transition="fade" style="background:#101B30;color:#EEF3F8;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;letter-spacing:2px;text-transform:uppercase;color:#F2A65A">Appendix · for Q&amp;A</p>
+<h2 style="font-family:'Space Grotesk', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1">One local workflow, four parts</h2>
+<div style="display:flex;flex-direction:row;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#16243D;border:1px solid #27395A;border-radius:20px;padding:32px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">01 · UI</p>
+<h3 style="font-size:36px;font-weight:600">Browser</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.5">Prompt<br>Live timeline<br>3D viewer<br>Physics video</p>
+</div>
+<div style="width:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6">SSE</p>
+<x-shape kind="arrow-right" style="width:72px;height:36px;background:#5CC8E8"></x-shape>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#16243D;border:1px solid #27395A;border-radius:20px;padding:32px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">02 · APP</p>
+<h3 style="font-size:36px;font-weight:600">Node server</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.5">Routes<br>Event stream<br>Process control<br>&#160;</p>
+</div>
+<div style="width:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6">spawn</p>
+<x-shape kind="arrow-right" style="width:72px;height:36px;background:#5CC8E8"></x-shape>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#16243D;border:2px solid #5CC8E8;border-radius:20px;padding:32px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">03 · CORE</p>
+<h3 style="font-size:36px;font-weight:600">Python core</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.5">CAD maker<br>Evaluator<br>Physics sim<br>&#160;</p>
+</div>
+<div style="width:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#7D8FA6">API</p>
+<x-shape kind="arrow-right" style="width:72px;height:36px;background:#5CC8E8"></x-shape>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#16243D;border:1px solid #27395A;border-radius:20px;padding:32px 28px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#5CC8E8">04 · MODEL</p>
+<h3 style="font-size:36px;font-weight:600">LLM gateway</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.5">Design<br>Vision review<br>Repair<br>&#160;</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #7FD9A8;padding:24px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">Runs on a laptop</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">CPU only. No GPU, Docker or database.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #5CC8E8;padding:24px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">No model lock-in</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">Any OpenAI-compatible gateway can be swapped in.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-top:4px solid #F2A65A;padding:24px 0px 0px 0px">
+<h3 style="font-size:30px;font-weight:600">Live progress</h3>
+<p style="font-size:24px;color:#A8BACD;line-height:1.4">Each stage streams to the browser as it runs.</p>
+</div>
+</div>
+<div style="position:absolute;left:128px;right:128px;bottom:64px;display:flex;flex-direction:row;justify-content:space-between">
+<p style="font-size:24px;color:#7D8FA6">ForgeMind · AutoMech</p>
+<p style="font-size:24px;color:#7D8FA6">A1</p>
+</div>
+<aside>Backup slide, not part of the 5 minutes. Use it if asked how the system is built or whether you depend on one model provider.</aside>
+</section>
+
+</div>
+<div id="notes"></div>
+<div id="bar">
+<button id="prev" aria-label="Previous slide">&#8592;</button>
+<span id="count"></span>
+<button id="next" aria-label="Next slide">&#8594;</button>
+<button id="toggleNotes">Notes (N)</button>
+<button id="fs">Full screen (F)</button>
+</div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('#stage>section'));
+  var stage=document.getElementById('stage'), notes=document.getElementById('notes'), count=document.getElementById('count');
+  var i=0;
+  function fit(){var s=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform='translate(-50%,-50%) scale('+s+')';}
+  function show(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('active',k===i)});
+    var a=slides[i].querySelector('aside'); notes.textContent=a?a.textContent:'';
+    count.textContent=(i+1)+' / '+slides.length;
+    if(location.hash!=='#'+(i+1)) history.replaceState(null,'','#'+(i+1));
+  }
+  function fs(){ if(document.fullscreenElement){document.exitFullscreen();} else if(document.documentElement.requestFullscreen){document.documentElement.requestFullscreen();} }
+  addEventListener('resize',fit);
+  addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>=0){e.preventDefault();show(i+1);}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>=0){e.preventDefault();show(i-1);}
+    else if(e.key==='Home'){show(0);} else if(e.key==='End'){show(slides.length-1);}
+    else if(e.key==='f'||e.key==='F'){fs();}
+    else if(e.key==='n'||e.key==='N'){notes.classList.toggle('show');}
+  });
+  stage.addEventListener('click',function(e){ if(e.target.closest('a'))return; show(e.clientX<innerWidth/3?i-1:i+1); });
+  document.getElementById('prev').onclick=function(){show(i-1)};
+  document.getElementById('next').onclick=function(){show(i+1)};
+  document.getElementById('fs').onclick=fs;
+  document.getElementById('toggleNotes').onclick=function(){notes.classList.toggle('show')};
+  fit(); show((parseInt(location.hash.slice(1),10)||1)-1);
+})();
+</script>
+</body>
+</html>
